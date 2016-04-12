@@ -94,7 +94,7 @@ while True:
         subprocess.call (['echo "" /var/log/auth.log'])
         print ("Auth.log file cleared.")
         print ("Clearing user bash history...")
-        subprocess.call (['echo "" ~/.bash_history"])
+        subprocess.call (['echo "" ~/.bash_history'])
         print ("User bash history cleared.")
         confirm = input ("You have chosen to delete the bash history file.\n\
     Are you sure you want to do this? (y/n):")
