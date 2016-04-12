@@ -28,7 +28,7 @@ while True:
         print ("File cleared.")
     elif option == "2":
         print ("Clearing user bash history...")
-        subprocess.call (['echo "" ~/.bash_history"])
+        subprocess.call (['echo "" ~/.bash_history])
         print ("User bash history cleared.")
     elif option == "3":
         confirm = input ("You have chosen to delete the bash history file.\n\
