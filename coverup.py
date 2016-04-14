@@ -81,9 +81,9 @@ while True:
                 exit()
                 subprocess.call (['exit'])
             elif confirm2 == "n":
-            print ("COVERUP will now shutdown.")
-            exit()
-            subprocess.call (['exit'])
+                print ("COVERUP will now shutdown.")
+                exit()
+                subprocess.call (['exit'])
             elif confirm2 == "N":
                 print ("COVERUP will now shutdown.")
                 exit()
