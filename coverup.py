@@ -1,7 +1,6 @@
 #this code was written by Nikolas Coleman and is intended for use on linux operating systems
 import subprocess
 
-
 subprocess.call(['clear'])
 print ("   _   _   _   _   _   _   _  ")
 print ("  / \ / \ / \ / \ / \ / \ / \ ")
