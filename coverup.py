@@ -152,13 +152,3 @@ while True:
             break
         elif option == "Q":
             break
-    
-    
-    
-    
-    
-    
-
-    
-               
-    
