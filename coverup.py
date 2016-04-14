@@ -20,33 +20,33 @@ while True:
     print ("8.Disable history logging (logout to take effect)")
     print ("9.ALL THE ABOVE")
     print ("")
-        option = input("Please enter the number you have chosen:")
-        if option == "1":
-            print ("Clearing auth.log file...")
-            subprocess.call(['echo "" /var/log/auth.log'])
-            print ("File cleared.")
-        elif option == "2":
-            print ("Clearing user bash history...")
-            subprocess.call (['echo "" ~/.bash_history'])
-            print ("User bash history cleared.")
-        elif option == "3":
-            confirm = input ("You have chosen to delete the bash history file.\n\
-        Are you sure you want to do this? (y/n):")
-            #I should probably change sting from uper to lower automaticly
-            if confirm == "y":
-                print ("Deleting bash history file...")
-                subprocess.call(['rm ~/.bash_history -rf'])
-                print ("File deleted.")
-            elif confirm == "Y":
-                print ("Deleting bash history file...")
-                subprocess.call(['rm ~/.bash_history -rf'])
-                print ("File deleted.")
-            elif confirm == "n":
-                print ("COVERUP will now shutdown.")
-                exit()
-            elif confirm == "N":
-                print ("COVERUP will now shutdown.")
-                exit() 
+    option = input("Please enter the number you have chosen:")
+    if option == "1":
+        print ("Clearing auth.log file...")
+        subprocess.call(['echo "" /var/log/auth.log'])
+        print ("File cleared.")
+    elif option == "2":
+        print ("Clearing user bash history...")
+        subprocess.call (['echo "" ~/.bash_history'])
+        print ("User bash history cleared.")
+    elif option == "3":
+        confirm = input ("You have chosen to delete the bash history file.\n\
+    Are you sure you want to do this? (y/n):")
+        #I should probably change sting from uper to lower automaticly
+        if confirm == "y":
+            print ("Deleting bash history file...")
+            subprocess.call(['rm ~/.bash_history -rf'])
+            print ("File deleted.")
+        elif confirm == "Y":
+            print ("Deleting bash history file...")
+            subprocess.call(['rm ~/.bash_history -rf'])
+            print ("File deleted.")
+        elif confirm == "n":
+            print ("COVERUP will now shutdown.")
+            exit()
+        elif confirm == "N":
+            print ("COVERUP will now shutdown.")
+            exit() 
         elif option == "4":
             print ("Sending all history to /dev/null...")
             subprocess.call (['ln /dev/nul ~/.bash_history -sf'])
